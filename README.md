@@ -4,7 +4,7 @@ R scripts and xlsx files for compartmental models of populations varying in scal
 
 These files were used in support of the paper:
 
-	Watts, Christopher, Chattoe-Brown, Edmund, Droy, Laurence, Gilbert, Nigel, Ladley, Daniel, Robertson, Duncan, (submitted to RofASSS) "The role of population scale  in compartmental models of Covid-19 transmission".
+Watts, Christopher, Chattoe-Brown, Edmund, Droy, Laurence, Gilbert, Nigel, Ladley, Daniel, Robertson, Duncan, (submitted to RofASSS) "The role of population scale  in compartmental models of Covid-19 transmission".
 
 ## xlsx for compartmental models
 
@@ -12,7 +12,7 @@ The __xlsx__ folder contains Excel workbooks. They implement several types of co
 
 For an introduction to compartmental models, see:
 
-	https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology
+https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology
 
 The workbooks contain deterministic versions of the models - there is no random variation in their processes. Epidemic models defined by ordinary differential equations (ODE) are solved approximately, using Euler's method. For more information, consult a textbook on System Dynamics modelling, such as Sterman, John (2000) "Business Dynamics".
 
@@ -24,7 +24,7 @@ The __R__ folder contains R scripts and one shell script. These were used to run
 
 To use them, you first need to clone the git for the compartment model of COVID-19 transmission, produced by the London School of Hygiene & Tropical Medicine (LSHTM). This can be found at:
 
-	https://github.com/cmmid/covid-UK
+https://github.com/cmmid/covid-UK
 
 Check you can use this by running:
 
