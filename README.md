@@ -6,7 +6,7 @@ These files were used in support of the paper:
 
 Watts, Christopher, Chattoe-Brown, Edmund, Droy, Laurence, Gilbert, Nigel, Ladley, Daniel, Robertson, Duncan, (submitted to RofASSS) "The role of population scale  in compartmental models of Covid-19 transmission".
 
-In this files, we demonstrate for various compartmental models that the times of occurrence of epidemic events, such as peak cases, are sensitive to the size of population and the number of initial seed infections.
+For this paper, we demonstrate for various compartmental models that the times of occurrence of epidemic events, such as peak cases, are sensitive to the size of population and the number of initial seed infections.
 
 For an introduction to compartmental models, see:
 
@@ -68,7 +68,7 @@ Some scripts may need editting to set the working directory correctly for your c
 
 ### Alternative seed infections in UK.R
 
-The default schedule for seed infections in the LSHTM model is 2 infections per day for 28 days. To run alternative schedules, make a copy of UK.R:
+The default schedule for seed infections in the LSHTM model is 2 infections per day for 28 days. To run alternative schedules, make a copy of "__UK.R__":
 
 	cp UK.R original_UK.R
 
@@ -84,9 +84,9 @@ To run with 1 per day for 28 days, edit it to read:
 
 	params$pop[[j]]$seed_times = rep(seed_start[j] + 0:27, each = 1);
 
-Before running UK.R thereafter, make sure you know with which version of this line you are about to run!
+Before running "UK.R" thereafter, make sure you know with which version of this line you are about to run!
 
-For each number of seeds, run popsize.sh and concat_D_and_T.R. Then rename the resulting "D.qs" file to something that reflects the seeding used: e.g. "D_2_28.qs". Edit the scripts plot_PeakWeek_Pop.R and rofass-figure-code.R to use whatever names you choose for your .qs data files.
+For each number of seeds, run "popsize.sh" and "concat_D_and_T.R". Then rename the resulting "D.qs" file to something that reflects the seeding used: e.g. "D_2_14.qs". Whatever names you choose for your .qs data files, edit the scripts "plot_PeakWeek_Pop.R" and "rofass-figure-code.R" so that they read the .qs files correctly.
 
 ### Disclaimer
 
