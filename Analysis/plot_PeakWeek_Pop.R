@@ -120,7 +120,7 @@ tail(W)
 
 # Cases peak week (This our chart for the RofASSS paper!)
 
-MW <- W[, list(max_week=which.max(total)), by=list(pop_scale, scenario, run, region, seed_inf)];
+MW <- W[, list(max_week=week[which.max(total)]), by=list(pop_scale, scenario, run, region, seed_inf)];
 NMW <- cbind(N[,list(pop_scale, scenario, run, pop, seed_inf)], max_week=MW[, max_week])
 Y <- NMW[scenario=="Base", list(peak_week=mean(max_week)), list(pop, seed_inf)];
 
