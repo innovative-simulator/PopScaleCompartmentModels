@@ -88,10 +88,10 @@ Before running "UK.R" thereafter, make sure you know with which version of this 
 
 For each number of seeds, run "popsize.sh" and "concat_D_and_T.R". Then rename the resulting "D.qs" file to something that reflects the seeding used: e.g. "D_2_14.qs". Whatever names you choose for your .qs data files, edit the scripts "plot_PeakWeek_Pop.R" and "rofass-figure-code.R" so that they read the .qs files correctly.
 
-### Disclaimer
+## Disclaimer
 
 All materials are provided as is, and we make no guarantees of their working for you, or of their being suitable for your own purposes. You use them at your own risk.
 
-### Copyright
+## Copyright
 
 Unless explicitly stated otherwise, all software posted here is made available under the GNU Public Licence, version 3.
