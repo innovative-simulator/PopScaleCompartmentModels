@@ -57,6 +57,26 @@ Some scripts may need editting to set the working directory correctly for your c
 
 "__plot_PeakWeek_Pop.R__" reads in the combined output data file, and then performs various analyses, including generating a version of the chart in our paper.
 
+### Alternative seed infections in UK.R
+
+The default schedule for seed infections in the LSHTM model is 2 infections per day for 28 days. To run alternative schedules, make a copy of UK.R:
+
+	cp UK.R original_UK.R
+
+Then edit line 376 of __UK.R__ from:
+
+	params$pop[[j]]$seed_times = rep(seed_start[j] + 0:27, each = 2);
+
+To run with 2 per day for 14 days, edit it to read:
+
+	params$pop[[j]]$seed_times = rep(seed_start[j] + 0:13, each = 2);
+
+To run with 1 per day for 28 days, edit it to read:
+
+	params$pop[[j]]$seed_times = rep(seed_start[j] + 0:27, each = 1);
+
+Before running UK.R thereafter, make sure you know with which version of this line you are about to run.
+
 ### Disclaimer
 
 All materials are provided as is, and we make no guarantees of their working for you, or of their being suitable for your own purposes. You use them at your own risk.
