@@ -4,7 +4,10 @@ R scripts and xlsx files for compartmental models of populations varying in scal
 
 These files were used in support of the paper:
 
-Watts, Christopher, Chattoe-Brown, Edmund, Droy, Laurence, Gilbert, Nigel, Ladley, Daniel, Robertson, Duncan, (submitted to RofASSS) "The role of population scale  in compartmental models of Covid-19 transmission".
+Christopher J Watts, Duncan A Robertson, Edmund Chattoe-Brown, & Nigel Gilbert (Submitted to BMJ Open) "Estimates of time to peak cases from SEIR models of COVID-19 transmission found to depend on arbitrary assumptions".
+
+An earlier (not peer-reviewed) report of the results was given at
+https://rofasss.org/2020/08/14/role-population-scale/
 
 For this paper, we demonstrate for various compartmental models that the times of occurrence of epidemic events, such as peak cases, are sensitive to the size of population and the number of initial seed infections.
 
