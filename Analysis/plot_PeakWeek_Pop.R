@@ -20,7 +20,6 @@ loadfonts(device = "win")
 
 # Edit to point to your working directory. Remember to convert \ to / or \\.
 setwd("~/mygit/PopScaleCompartmentModels/Analysis")
-setwd("D:\\MyDocus\\Simulation\\NetLogo\\Diffusion\\DiseaseDecisions\\git\\PopScaleCompartmentModels\\Analysis")
 
 D <- qread("D_2_28.qs");
 D <- cbind(D, seed_inf="2 for 28");
@@ -123,7 +122,7 @@ p1 <- ggplot(Y,
                 )
   
 ggsave( # Save the plot object to file, with specified parameters. 
-    filename = "LSHTM_peak_week_by_log_pop.tif",
+    filename = "Fig1_peak_week_by_log_pop.tif",
     plot = p1,
     device = "tiff",
     width = 5.25,
@@ -157,7 +156,7 @@ p2 <- ggplot(Y,
                 )
 
 ggsave( # Save the plot object to file, with specified parameters. 
-    filename = "LSHTM_peak_week_by_log_pop_MONO.tif",
+    filename = "Fig1_peak_week_by_log_pop_MONO.tif",
     plot = p2,
     device = "tiff",
     width = 5.25,
